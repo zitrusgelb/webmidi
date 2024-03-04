@@ -12,7 +12,8 @@
 
       try {
         access = await navigator.requestMIDIAccess({sysex: true});
-      } catch {
+      } catch (e) {
+        console.log(e)
         return null;
       }
 
